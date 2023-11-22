@@ -1,0 +1,31 @@
+body {
+  background-color: blue
+}
+
+img {
+  width: auto;
+  height: 140px;
+}
+
+.nav-link {
+  transition: color 0.5s;
+  color: white;
+}
+
+.nav-link:hover {
+  transition: color 0.5s;
+  color: #15a2fb;
+}
+
+
+.banner{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 1100px) {
+  nav.navbar.navbar-expand-lg {
+    height: 100px;
+  }
+}
+
