@@ -1,5 +1,5 @@
 body {
-  background-color: blue
+  height: 100vh;
 }
 
 img {
@@ -29,3 +29,11 @@ img {
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
+
+.footer {
+  background-color: #0a0a16;
+}

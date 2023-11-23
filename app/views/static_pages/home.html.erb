@@ -9,37 +9,85 @@
     <title>HTML 5 Boilerplate</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #0a0a16">
-      <a class="navbar-brand" href="#">
-       <%= image_tag "okay.svg"%>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
        <article id="banner">
-          <%= video_tag(["banner_final.mp4"],:autoplay => true,:muted => true, class: 'banner') %>
-      </article>
-    </body>
+          <div class ="container-fluid">
+            <div class="row">
+              <%= video_tag(["banner_final.mp4"],:autoplay => true,:muted => true, class: 'banner') %>
+            </div>
+          </div> 
+        </article>
 
-    <script>
-</script>
+         <section class="description">
+        <div class="container">
+            <h2 class="text-center mt-4">Why Choose Us?</h2>
+
+            <div class="row">
+                <div class="col-12">
+                    <h3>Expert Team</h3>
+                    <p>Our team comprises experts in graphic design, programming, marketing, ecommerce, and more. We bring a diverse skill set to meet all your web design needs.</p>
+                </div>
+                <div class="col-12">
+                    <h3>SEO Specialization</h3>
+                    <p>We specialize in SEO to ensure your website ranks well on search engines. Increase your online visibility and drive more traffic to your business.</p>
+                </div>
+                <div class="col-12">
+                    <h3>High-Quality Websites</h3>
+                    <p>We are committed to delivering high-quality websites that are aesthetically appealing, easy to navigate, and geared towards driving sales for your business.</p>
+                </div>
+                <div class="col-12">
+                <h3>Flexible Pricing</h3>
+                <p>We understand that each project is unique. Our flexible pricing options ensure that you get the best value for your investment, tailored to your specific needs and budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="for-whom">
+        <div class="container mb-3 mt-3">
+            <h2 class="text-center mb-4">Who is Strategic Web For?</h2>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Entrepreneurs & Startups</h3>
+                    <p>Strategic Web is the ideal partner for entrepreneurs and startups looking to establish a strong online presence. We create custom solutions that align with your brand and business goals.</p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Established Businesses</h3>
+                    <p>For established businesses seeking to enhance their online visibility and customer engagement, Strategic Web provides tailored web design services that reflect your brand identity and values.</p>
+                </div>
+                <div class="col-md-12">
+                    <h3>Organizations & Causes</h3>
+                    <p>Nonprofits, organizations, and causes benefit from our expertise in creating websites that effectively communicate their mission, values, and initiatives. We provide comprehensive solutions to support their online goals and community engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Footer Section -->
+    <footer class="text-white py-4 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Our Availability</h5>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Contact Us</h5>
+                    <p>Have a question? Reach out for a free consultation!</p>
+                    <p>Phone 1: +1 929-324-6058</p>
+                    <p>Phone 2: +1 (555) 987-6543</p>
+                    <p>Email 1: admin@strategicwebdesigner.com</p>
+                    <p>Email 2: support@strategicwebdesigner.com</p>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-end mt-4">
+              <div class="col-md-6 text-right">
+                  <%= image_tag "okay.svg"%>
+              </div>
+            </div>
+          </div>
+    </footer>
+   </body>
 </html>
 
