@@ -20,10 +20,11 @@ before_action :initialize_contact, only: [:contact]
     if create_contact.save
       ContactMailer.send_contact_email(create_contact).deliver_now
       
-      flash[:success] = "your information was submitted sucessfully"
+      flash[:success] = "Your information was submitted sucessfully Thank you for your submission"
       redirect_to contact_path
     else
       flash[:error] = 'Error saving contact information.'
+      flash[:error_messages] = create_contact.errors.full_messages.join(',')
       render :contact
     end
   end

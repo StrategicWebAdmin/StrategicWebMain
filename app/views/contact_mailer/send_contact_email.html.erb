@@ -1,16 +1,43 @@
-<!-- app/views/contact_mailer/send_contact_email.html.erb -->
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
-  </head>
-  <body>
-    <h2>New Contact Form Submission</h2>
-    <p>Name: <%= @contact.name %></p>
-    <p>Email: <%= @contact.email %></p>
-    <p>Phone: <%= @contact.phonenumber %></p>
-    <p>Service Type: <%= @contact.select_service_type %></p>
-    <p>Message: <%= @contact.message %></p>
-  </body>
-</html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
 
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #007BFF;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    strong {
+      color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>New Contact Form Submission</h1>
+
+    <p><strong>Name:</strong> <%= @contact.name %></p>
+    <p><strong>Email:</strong> <%= @contact.email %></p>
+    <p><strong>Phone Number:</strong> <%= @contact.phonenumber %></p>
+    <p><strong>Service Type:</strong> <%= @contact.select_service_type %></p>
+    <p><strong>Message:</strong> <%= @contact.message %></p>
+  </div>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Strategic Web</title>
+    <% content_for :title, "Strategic Web - Services" %>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
@@ -24,9 +24,9 @@
 
         <div class="row">
             <!-- Frontend Designing -->
-            <div class="col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
                 <div class="card">
-                    <img src="front-end-image.jpg" class="card-img-top" alt="Frontend Designing">
+                  <%= image_tag "Frontend.jpeg", class: 'card-img-top'%>
                     <div class="card-body">
                         <h5 class="card-title">Frontend Designing</h5>
                         <p>Engaging your audience begins with a visually stunning and user-friendly interface. Our frontend designing services focus on turning your ideas into engaging user experiences. From responsive web design to intuitive user interfaces, we ensure your website not only catches the eye but also provides seamless interaction across all devices. Our commitment to cross-browser compatibility and mobile optimization guarantees a consistent and enjoyable experience for every user.</p>
@@ -34,7 +34,7 @@
                             Learn More
                         </button>
                         <div class="collapse mt-3" id="frontendCollapse">
-                            <h6 class="font-weight-bold">Learn More - Frontend Designing</h6>
+                            <h6 class="font-weight-bold">Our Expertise - Frontend Designing</h6>
                             <p>We specialize in creating aesthetically appealing websites with a focus on user experience and mobile responsiveness.</p>
                             <h6 class="font-weight-bold mt-3">Services Offered:</h6>
                             <ul>
@@ -50,9 +50,9 @@
             </div>
 
             <!-- Graphic Designing -->
-            <div class="col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
                 <div class="card">
-                    <img src="graphic-design-image.jpg" class="card-img-top" alt="Graphic Designing">
+                  <%= image_tag "graphic_design.jpeg", class: 'card-img-top'%>
                     <div class="card-body">
                         <h5 class="card-title">Graphic Designing</h5>
                         <p>Your brand's visual identity is crucial in making a lasting impression. Our graphic designing services go beyond aesthetics; we craft experiences that resonate with your audience. From logo design and branding to business cards and social media kits, we ensure every visual element aligns with your brand's narrative. Whether it's web banners or print materials, our creative solutions are tailored to leave a memorable mark on your audience.</p>
@@ -60,7 +60,7 @@
                             Learn More
                         </button>
                         <div class="collapse mt-3" id="graphicCollapse">
-                            <h6 class="font-weight-bold">Learn More - Graphic Designing</h6>
+                            <h6 class="font-weight-bold">Our Expertise - Graphic Designing</h6>
                             <p>We excel in graphic design, covering a spectrum from UI design to logo design and branding, ensuring a consistent and impactful visual representation for your brand across various mediums.</p>
                             <h6 class="font-weight-bold mt-3">Services Offered:</h6>
                             <ul>
@@ -81,9 +81,9 @@
             </div>
 
             <!-- Application Development/Backend Design -->
-            <div class="col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
                 <div class="card">
-                    <img src="app-development-image.jpg" class="card-img-top" alt="Application Development">
+                  <%= image_tag "applicationdesign.jpeg", class: 'card-img-top'%>
                     <div class="card-body">
                         <h5 class="card-title">Application Development/Backend Design</h5>
                         <p>Powering your website with robust functionality requires a solid backend infrastructure. Our backend development services are tailored to meet the unique needs of your business. From database design and management to server-side scripting, our skilled developers ensure seamless functionality and scalability for future growth. We specialize in API development, content management systems (CMS) implementation, and custom web application development to bring your digital ideas to life.</p>
@@ -91,7 +91,7 @@
                             Learn More
                         </button>
                         <div class="collapse mt-3" id="appCollapse">
-                            <h6 class="font-weight-bold">Learn More - Application Development/Backend Design</h6>
+                            <h6 class="font-weight-bold">Our Expertise - Application Development/Backend Design</h6>
                             <p>We bring technical excellence to the forefront, specializing in backend development, database management, and the implementation of custom web applications to meet the unique needs of your business.</p>
                             <h6 class="font-weight-bold mt-3">Services Offered:</h6>
                             <ul>
@@ -107,9 +107,9 @@
             </div>
 
             <!-- E-commerce Solutions -->
-            <div class="col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
                 <div class="card">
-                    <img src="ecommerce-image.jpg" class="card-img-top" alt="E-commerce Solutions">
+                  <%= image_tag "frontendanother.jpeg", class: 'card-img-top'%>
                     <div class="card-body">
                         <h5 class="card-title">E-commerce Solutions</h5>
                         <p>In the ever-evolving world of online retail, a seamless and secure ecommerce platform is crucial for success. Our e-commerce solutions are designed to turn your online store into a captivating shopping experience. From custom ecommerce website design to shopping cart integration, payment gateway integration, inventory management, and Pay-Per-Click advertising, we ensure your customers enjoy a smooth and secure online shopping journey. Security and compliance are at the forefront of our approach, ensuring your business is ready for the demands of the digital marketplace.</p>
@@ -117,7 +117,7 @@
                             Learn More
                         </button>
                         <div class="collapse mt-3" id="ecommerceCollapse">
-                            <h6 class="font-weight-bold">Learn More - E-commerce Solutions</h6>
+                            <h6 class="font-weight-bold">Our Expertise - E-commerce Solutions</h6>
                             <p>We specialize in creating secure and user-friendly ecommerce solutions, incorporating custom design, shopping cart integration, payment gateway implementation, and effective Pay-Per-Click advertising for a seamless online shopping experience.</p>
                             <h6 class="font-weight-bold mt-3">Services Offered:</h6>
                             <ul>
@@ -135,10 +135,10 @@
         </div>
     </div>
 
-        <section class="bg-light text-center py-5">
+        <section class="text-center py-5" style = "background-color: #0a0a16">
         <div class="container">
-            <h2 class="mb-4">Interested in any of our services?</h2>
-            <p>Contact us right here for a free consultation!</p>
+            <h2 class="mb-4 text-white">Interested in any of our services?</h2>
+            <p class ="text-white">Contact us right here for a free consultation!</p>
             <a href="contact.html" class="btn btn-primary">Contact Us</a>
         </div>
     </section>
