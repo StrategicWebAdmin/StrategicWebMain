@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get "about" => "static_pages#about"
   get "services" => "static_pages#services"
   get "contact" => "static_pages#contact"
+  post '/send_contact', to: 'static_pages#send_contact', as: 'send_contact'
 end

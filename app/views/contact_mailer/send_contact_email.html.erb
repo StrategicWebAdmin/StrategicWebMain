@@ -1,0 +1,16 @@
+<!-- app/views/contact_mailer/send_contact_email.html.erb -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h2>New Contact Form Submission</h2>
+    <p>Name: <%= @contact.name %></p>
+    <p>Email: <%= @contact.email %></p>
+    <p>Phone: <%= @contact.phonenumber %></p>
+    <p>Service Type: <%= @contact.select_service_type %></p>
+    <p>Message: <%= @contact.message %></p>
+  </body>
+</html>
+

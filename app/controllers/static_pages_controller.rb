@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+before_action :initialize_contact, only: [:contact]
   def home
     render 'home'
   end
@@ -12,22 +13,30 @@ class StaticPagesController < ApplicationController
   end
 
   def create_contact
-    @contact = Contact.new
+    @Contact = Contact.new(contact_params)
+  end
 
-    if @contact.save
-      flash[:success] = "Your message was sucessfully sent"
+  def send_contact
+    if create_contact.save
+      ContactMailer.send_contact_email(create_contact).deliver_now
+      
+      flash[:success] = "your information was submitted sucessfully"
       redirect_to contact_path
     else
-      flash[:error] = "Error sending message, please fix the following errors"
-      flash[:error_messages] = @contact.errors.full_messages
+      flash[:error] = 'Error saving contact information.'
       render :contact
     end
   end
 
+
   private
 
-  def contact_params
-    params.require(:contact).permit(:name, :email, :phonenumber, :select_service_type, :message)
+  def initialize_contact
+    @contact = Contact.new
   end
 
-end
+
+     def contact_params
+    params.require(:contact).permit(:name, :email, :phonenumber, :select_service_type, :message)
+  end
+end  
